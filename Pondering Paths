@@ -93,3 +93,7 @@ pwn.college{ocvyd0S6kSOBAz8QGmU-ntHPUxk.dFTN1QDL2IzN0czW}
 
 # home sweet home
 
+hacker@paths~home-sweet-home:~$ /challenge/run ~/s
+Writing the file to /home/hacker/s!
+... and reading it back to you:
+pwn.college{4kPKA5zOy4q0tlaxrCz-zTc97Ak.dNzM4QDL2IzN0czW}
