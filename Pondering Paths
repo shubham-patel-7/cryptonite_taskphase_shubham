@@ -11,3 +11,16 @@ hacker@paths~program-and-absolute-paths:~$ /challenge/run
 Correct!!!
 /challenge/run is an absolute path! Here is your flag:
 pwn.college{AXsjBb9QTeNvnge2VOlwZ5xx7Cc.dVDN1QDL2IzN0czW}
+
+# POsition thy self
+
+hacker@paths~position-thy-self:~$ /challenge/run
+Incorrect...
+You are not currently in the /proc/67 directory.
+Please use the `cd` utility to change directory appropriately.
+hacker@paths~position-thy-self:~$ cd /proc/67
+hacker@paths~position-thy-self:/proc/67$ /challenge/run
+Correct!!!
+/challenge/run is an absolute path, invoked from the right directory!
+Here is your flag:
+pwn.college{4uJJA0f53rkY3Xzi55OWiIdhOOR.dZDN1QDL2IzN0czW}
