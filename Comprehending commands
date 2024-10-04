@@ -50,3 +50,77 @@ hacker@commands~hidden-files:/$ ls -a
 ..  .flag-31061258825371  boot  dev        home  lib32  libx32  mnt    opt  root  sbin  sys  usr
 hacker@commands~hidden-files:/$ cat /.flag-31061258825371
 pwn.college{wHwanvyOXEKuQZSm_zrlvT_DKZQ.dBTN4QDL2IzN0czW}
+
+#
+
+hacker@commands~an-epic-filesystem-quest:~$ cd /
+hacker@commands~an-epic-filesystem-quest:/$ ls
+LEAD  boot       dev  flag  lib    lib64   media  nix  proc  run   srv  tmp  var
+bin   challenge  etc  home  lib32  libx32  mnt    opt  root  sbin  sys  usr
+hacker@commands~an-epic-filesystem-quest:/$ cat LEAD
+Yahaha, you found me!
+The next clue is in: /usr/local/lib/python3.8/dist-packages/sympy/solvers/tests/__pycache__
+
+Watch out! The next clue is **trapped**. You'll need to read it out without 'cd'ing into the directory; otherwise, the clue will self destruct!
+hacker@commands~an-epic-filesystem-quest:/$ cd
+hacker@commands~an-epic-filesystem-quest:~$ ls /usr/local/lib/python3.8/dist-packages/sympy/solvers/tests/__pycache__
+REVELATION-TRAPPED                test_inequalities.cpython-38.pyc  test_recurr.cpython-38.pyc
+__init__.cpython-38.pyc           test_numeric.cpython-38.pyc       test_simplex.cpython-38.pyc
+test_constantsimp.cpython-38.pyc  test_pde.cpython-38.pyc           test_solvers.cpython-38.pyc
+test_decompogen.cpython-38.pyc    test_polysys.cpython-38.pyc       test_solveset.cpython-38.pyc
+hacker@commands~an-epic-filesystem-quest:~$ cat /usr/local/lib/python3.8/dist-packages/sympy/solvers/tests/__pycache__/REVELATION-TRAPPED
+Great sleuthing!
+The next clue is in: /opt/busybox/busybox-1.33.2/include/config/feature/modprobe
+
+Watch out! The next clue is **trapped**. You'll need to read it out without 'cd'ing into the directory; otherwise, the clue will self destruct!
+hacker@commands~an-epic-filesystem-quest:~$ ls /opt/busybox/busybox-1.33.2/include/config/feature/modprobe
+TIP-TRAPPED  blacklist.h  small
+hacker@commands~an-epic-filesystem-quest:~$ cat /opt/busybox/busybox-1.33.2/include/config/feature/modprobe/TIP-TRAPPED
+Congratulations, you found the clue!
+The next clue is in: /opt/splitmind/.git/objects/db
+
+The next clue is **delayed** --- it will not become readable until you enter the directory with 'cd'.
+hacker@commands~an-epic-filesystem-quest:/opt/splitmind/.git/objects/db$ ls
+30d24fd7e703e1dd01e2b864811e28e8dfeb55  HINT
+hacker@commands~an-epic-filesystem-quest:/opt/splitmind/.git/objects/db$ cat HINT
+Yahaha, you found me!
+The next clue is in: /usr/share/doc/python3-ppl/html/_sources
+hacker@commands~an-epic-filesystem-quest:/usr/share/doc/python3-ppl/html/_sources$ ls
+MESSAGE  index.rst.txt
+hacker@commands~an-epic-filesystem-quest:/usr/share/doc/python3-ppl/html/_sources$ cat MESSAGE
+Congratulations, you found the clue!
+The next clue is in: /usr/local/lib/python3.8/dist-packages/pwnlib/adb
+
+Watch out! The next clue is **trapped**. You'll need to read it out without 'cd'ing into the directory; otherwise, the clue will self destruct!
+hacker@commands~an-epic-filesystem-quest:/usr/share/doc/python3-ppl/html/_sources$ cd
+hacker@commands~an-epic-filesystem-quest:~$ ls /usr/local/lib/python3.8/dist-packages/pwnlib/adb
+SPOILER-TRAPPED  __init__.py  __pycache__  adb.py  bootimg.py  bootloader.py  protocol.py
+hacker@commands~an-epic-filesystem-quest:~$ ls /usr/local/lib/python3.8/dist-packages/pwnlib/adb/SPOILER-TRAPPED
+/usr/local/lib/python3.8/dist-packages/pwnlib/adb/SPOILER-TRAPPED
+hacker@commands~an-epic-filesystem-quest:~$ cat /usr/local/lib/python3.8/dist-packages/pwnlib/adb/SPOILER-TRAPPED
+Yahaha, you found me!
+The next clue is in: /usr/share/icons/Adwaita/16x16/ui
+
+The next clue is **delayed** --- it will not become readable until you enter the directory with 'cd'.
+hacker@commands~an-epic-filesystem-quest:~$ ls /usr/share/icons/Adwaita/16x16/ui
+NOTE                            pan-end-symbolic.symbolic.png    pan-up-symbolic.symbolic.png
+pan-down-symbolic.symbolic.png  pan-start-symbolic.symbolic.png
+hacker@commands~an-epic-filesystem-quest:~$ cd /usr/share/icons/Adwaita/16x16/ui
+hacker@commands~an-epic-filesystem-quest:/usr/share/icons/Adwaita/16x16/ui$ cat NOTE
+Lucky listing!
+The next clue is in: /opt/linux/linux-5.4/Documentation/devicetree/bindings/lpddr2
+
+The next clue is **hidden** --- its filename starts with a '.' character. You'll need to look for it using special options to 'ls'.
+hacker@commands~an-epic-filesystem-quest:/usr/share/icons/Adwaita/16x16/ui$ cd
+hacker@commands~an-epic-filesystem-quest:~$ ls /opt/linux/linux-5.4/Documentation/devicetree/bindings/lpddr2
+lpddr2-timings.txt  lpddr2.txt
+hacker@commands~an-epic-filesystem-quest:~$ ls -a /opt/linux/linux-5.4/Documentation/devicetree/bindings/lpddr2
+.  ..  .ALERT  lpddr2-timings.txt  lpddr2.txt
+hacker@commands~an-epic-filesystem-quest:~$ cat /opt/linux/linux-5.4/Documentation/devicetree/bindings/lpddr2/.ALERT
+Congratulations, you found the clue!
+The next clue is in: /opt/busybox/busybox-1.33.2/include/config/feature/crond/special
+hacker@commands~an-epic-filesystem-quest:~$ ls /opt/busybox/busybox-1.33.2/include/config/feature/crond/special
+CLUE  times.h
+hacker@commands~an-epic-filesystem-quest:~$ cat /opt/busybox/busybox-1.33.2/include/config/feature/crond/special/CLUE
+CONGRATULATIONS! Your perserverence has paid off, and you have found the flag!
+It is: pwn.college{ozOg_-Efev3V0nbuJbJozex86mR.dljM4QDL2IzN0czW}
