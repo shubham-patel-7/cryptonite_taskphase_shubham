@@ -18,5 +18,27 @@ pwn.college{A2xevFjleTBJOc1wFznOdczvQIo.dBjM5QDL2IzN0czW}
 hacker@commands~grepping-for-a-needle-in-a-haystack:~$ grep pwn.college /challenge/data.txt
 pwn.college{smwoJSoE5bDMRhkFnN67JLgsnTz.ddTM4QDL2IzN0czW}
 
+# listing files
 
+hacker@commands~listing-files:~$ ls /challenge
+32163-renamed-run-23570  DESCRIPTION.md
+hacker@commands~listing-files:~$ /challenge/32163-renamed-run-23570
+Yahaha, you found me! Here is your flag:
+pwn.college{wj7IOdzBOUXvQWKiybgwWH2lwXO.dhjM4QDL2IzN0czW}
+
+# touching files
+
+hacker@commands~touching-files:~$ cd /tmp
+hacker@commands~touching-files:/tmp$ touch pwn
+hacker@commands~touching-files:/tmp$ touch college
+hacker@commands~touching-files:/tmp$ /challenge/run
+Success! Here is your flag:
+pwn.college{MWruyuOr0mo5Uesn8nnfy9Cn9ha.dBzM4QDL2IzN0czW}
+
+# removing files
+
+hacker@commands~removing-files:~$ rm delete_me
+hacker@commands~removing-files:~$ /challenge/check
+Excellent removal. Here is your reward:
+pwn.college{IVjPOD7vj6mcuSNVe9mO4gCk4b6.dZTOwUDL2IzN0czW}
 
