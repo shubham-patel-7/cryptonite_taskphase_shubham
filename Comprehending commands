@@ -42,3 +42,11 @@ hacker@commands~removing-files:~$ /challenge/check
 Excellent removal. Here is your reward:
 pwn.college{IVjPOD7vj6mcuSNVe9mO4gCk4b6.dZTOwUDL2IzN0czW}
 
+# hidden files
+
+hacker@commands~hidden-files:~$ cd /
+hacker@commands~hidden-files:/$ ls -a
+.   .dockerenv            bin   challenge  etc   lib    lib64   media  nix  proc  run   srv  tmp  var
+..  .flag-31061258825371  boot  dev        home  lib32  libx32  mnt    opt  root  sbin  sys  usr
+hacker@commands~hidden-files:/$ cat /.flag-31061258825371
+pwn.college{wHwanvyOXEKuQZSm_zrlvT_DKZQ.dBTN4QDL2IzN0czW}
