@@ -54,4 +54,42 @@ pwn.college{wLWCLfjTzsq8qMjJUWU71n8iVz1.dhDN1QDL2IzN0czW}
 
 # implicit relative path, form /
 
+hacker@paths~implicit-relative-paths-from-:~$ /challenge/run
+Incorrect...
+You are not currently in the / directory.
+Please use the `cd` utility to change directory appropriately.
+hacker@paths~implicit-relative-paths-from-:~$ cd /
+hacker@paths~implicit-relative-paths-from-:/$ challenge/run
+Correct!!!
+challenge/run is a relative path, invoked from the right directory!
+Here is your flag:
+pwn.college{QM4b2MboDhuGmbHBbPhTQJzhvWG.dlDN1QDL2IzN0czW}
+
+# explicit relative path, form /
+
+hacker@paths~explicit-relative-paths-from-:~$ /challenge/run
+Incorrect...
+You are not currently in the / directory.
+Please use the `cd` utility to change directory appropriately.
+hacker@paths~explicit-relative-paths-from-:~$ cd /
+hacker@paths~explicit-relative-paths-from-:/$ ./challenge/run
+Correct!!!
+./challenge/run is a relative path, invoked from the right directory!
+Here is your flag:
+pwn.college{oswXG00aDdGlwK3-ooUOUdcXrTl.dBTN1QDL2IzN0czW}
+
+# implicit relative path
+
+hacker@paths~implicit-relative-path:~$ /challenge/run
+Incorrect...
+You are not currently in the /challenge directory.
+Please use the `cd` utility to change directory appropriately.
+hacker@paths~implicit-relative-path:~$ cd /challenge
+hacker@paths~implicit-relative-path:/challenge$ ./run
+Correct!!!
+./run is a relative path, invoked from the right directory!
+Here is your flag:
+pwn.college{ocvyd0S6kSOBAz8QGmU-ntHPUxk.dFTN1QDL2IzN0czW}
+
+# home sweet home
 
