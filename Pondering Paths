@@ -24,3 +24,34 @@ Correct!!!
 /challenge/run is an absolute path, invoked from the right directory!
 Here is your flag:
 pwn.college{4uJJA0f53rkY3Xzi55OWiIdhOOR.dZDN1QDL2IzN0czW}
+
+# Position elsewhere
+
+hacker@paths~position-elsewhere:~$ /challenge/run
+Incorrect...
+You are not currently in the /usr/share/doc directory.
+Please use the `cd` utility to change directory appropriately.
+hacker@paths~position-elsewhere:~$ cd /usr/share/doc
+hacker@paths~position-elsewhere:/usr/share/doc$ /challenge/run
+Correct!!!
+/challenge/run is an absolute path, invoked from the right directory!
+Here is your flag:
+pwn.college{wcLS_by68A367Z2Cuh1iadmnlRD.ddDN1QDL2IzN0czW}
+
+# Position yet somewhere else
+
+hacker@paths~position-yet-elsewhere:~$ /challenge/run
+Incorrect...
+You are not currently in the /usr/include directory.
+Please use the `cd` utility to change directory appropriately.
+hacker@paths~position-yet-elsewhere:~$ cd ^C
+hacker@paths~position-yet-elsewhere:~$ cd /usr/include
+hacker@paths~position-yet-elsewhere:/usr/include$ /challenge/run
+Correct!!!
+/challenge/run is an absolute path, invoked from the right directory!
+Here is your flag:
+pwn.college{wLWCLfjTzsq8qMjJUWU71n8iVz1.dhDN1QDL2IzN0czW}
+
+# implicit relative path, form /
+
+
