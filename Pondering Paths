@@ -4,3 +4,10 @@ hacker@paths~the-root:~$ /pwn
 BOOM!!!
 Here is your flag:
 pwn.college{IfrQprOKattDoYnU00lLMkLxTXt.dhzN5QDL2IzN0czW}
+
+# Program and absolute paths
+
+hacker@paths~program-and-absolute-paths:~$ /challenge/run
+Correct!!!
+/challenge/run is an absolute path! Here is your flag:
+pwn.college{AXsjBb9QTeNvnge2VOlwZ5xx7Cc.dVDN1QDL2IzN0czW}
