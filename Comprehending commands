@@ -1,1 +1,19 @@
+# cat: not the pet, but the command!
 
+hacker@commands~cat-not-the-pet-but-the-command:~$ cat ~/flag
+pwn.college{ko3KR1tcdwULZW1Pffrj1JS0HSk.dFzN1QDL2IzN0czW}
+
+# catting absolute paths
+
+hacker@commands~catting-absolute-paths:~$ cat /flag
+pwn.college{A66hcIsk05DGTxhny_R0SLhqzG2.dlTM5QDL2IzN0czW}
+
+# more catting practice
+
+hacker@commands~more-catting-practice:~$ cat /usr/share/java/flag
+pwn.college{A2xevFjleTBJOc1wFznOdczvQIo.dBjM5QDL2IzN0czW}
+
+# grepping for a needle in a haystack
+
+hacker@commands~grepping-for-a-needle-in-a-haystack:~$ grep pwn.college /challenge/data.txt
+pwn.college{smwoJSoE5bDMRhkFnN67JLgsnTz.ddTM4QDL2IzN0czW}
