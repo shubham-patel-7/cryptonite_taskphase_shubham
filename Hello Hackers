@@ -1,6 +1,5 @@
 # Intro to commands
 
-...First Module
 root@ForenTec-SKPSpectre:~# ssh -i ./key hacker@dojo.pwn.college
 Connected!
 hacker@hello~intro-to-commands:~$ hello
@@ -10,6 +9,7 @@ pwn.college{oEjlLQy6IjcbatAeA5nr4UYSzer.ddjNyUDL2IzN0czW}
 
 ....First module done
 
+# Intro to Arguements
 
 hacker@hello~intro-to-arguments:~$ hello hackers
 Success! Here is your flag:
