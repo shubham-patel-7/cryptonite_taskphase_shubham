@@ -1,1 +1,5 @@
+# Learning from documentation
 
+hacker@man~learning-from-documentation:~$ /challenge/challenge --giveflag
+Correct argument! Here is your flag:
+pwn.college{YpiM7sudMnhuN6ou3qSm-VKF3Yh.dRjM5QDL2IzN0czW}
