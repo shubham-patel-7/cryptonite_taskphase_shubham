@@ -47,3 +47,11 @@ SEE ALSO
 pwn.college                        May 2024                      CHALLENGE(1)
 hacker@man~reading-manuals:~$ /challenge/challenge --nkxpmb 427
 Correct usage! Your flag: pwn.college{4JZ_2E7nkJxpmbQHEHGadpms9M2.dRTM4QDL2IzN0czW}
+
+# Searching manuals
+
+hacker@man~searching-manuals:~$ man challenge
+hacker@man~searching-manuals:~$
+hacker@man~searching-manuals:~$ /challenge/challenge --ioak
+Initializing...
+Correct usage! Your flag: pwn.college{oeyQcgzjWCgf3uwLdT4WKzgZm8A.dVTM4QDL2IzN0czW}
