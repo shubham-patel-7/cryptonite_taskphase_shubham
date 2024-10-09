@@ -170,3 +170,7 @@ hacker@piping~grepping-errors:~$ /challenge/run 2>& 1 | grep pwn.college
 [PASS] You have passed the checks on the process on the other end of my stderr!
 [PASS] Success! You have satisfied all execution requirements.
 pwn.college{cNwE3twHskIh930BOQXcFLjSgiw.dVDM5QDL2IzN0czW}
+
+#
+
+
