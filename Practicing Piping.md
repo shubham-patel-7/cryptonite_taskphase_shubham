@@ -167,10 +167,40 @@ hacker@piping~grepping-errors:~$ /challenge/run 2>& 1 | grep pwn.college
 [INFO] This might be different than expected because of symbolic links (for example, from /usr/bin/python to /usr/bin/python3 to /usr/bin/python3.8).
 [INFO] To pass the checks, the executable must be grep.
 
+# Duplicating piped data with tee
+
+hacker@piping~duplicating-piped-data-with-tee:~$ /challenge/pwn | tee pwn_output | /challenge/college
+Processing...
+The input to 'college' does not contain the correct secret code! This code
+should be provided by the 'pwn' command. HINT: use 'tee' to intercept the
+output of 'pwn' and figure out what the code needs to be.
+hacker@piping~duplicating-piped-data-with-tee:~$ cat pwn_output
+Usage: /challenge/pwn --secret [SECRET_ARG]
+
+SECRET_ARG should be "wWJewht4"
+hacker@piping~duplicating-piped-data-with-tee:~$ /challenge/pwn --secret wWJewht4 | /challenge/college
+Processing...
+Correct! Passing secret value to /challenge/college...
+Great job! Here is your flag:
+pwn.college{wWJewht44j5l-nbYDQ4YDuUUKDB.dFjM5QDL2IzN0czW}
 [PASS] You have passed the checks on the process on the other end of my stderr!
 [PASS] Success! You have satisfied all execution requirements.
 pwn.college{cNwE3twHskIh930BOQXcFLjSgiw.dVDM5QDL2IzN0czW}
 
-#
+# Writing to multiple programs
+
+hacker@piping~writing-to-multiple-programs:~$ /challenge/hack |tee >(/challenge/the) | /challenge/planet
+Congratulations, you have duplicated data into the input of two programs! Here
+is your flag:
+pwn.college{owmS-a3pvCGdUJZNkrcdItvuDGi.dBDO0UDL2IzN0czW}
+
+My head had a "headache".
+
+# Split piping stderr and stdout
+
+hacker@piping~split-piping-stderr-and-stdout:~$ /challenge/hack 2> >( /challenge/the ) | /challenge/planet
+Congratulations, you have learned a redirection technique that even experts
+struggle with! Here is your flag:
+pwn.college{A3gloic9KkEINnl90EVQ9dG7EJk.dFDNwYDL2IzN0czW}
 
 
