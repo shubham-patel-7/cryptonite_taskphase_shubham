@@ -130,7 +130,7 @@ hacker@piping~grepping-live-output:~$ /challenge/run | grep pwn.college
 [PASS] Success! You have satisfied all execution requirements.
 pwn.college{UgZEc4moxoC66OPFSqhmyQZWMHA.dlTM4QDL2IzN0czW}
 
-#
+# Grepping errors
 
 hacker@piping~grepping-errors:~$ /challenge/run 2>& 1> stderr
 [INFO] WELCOME! This challenge makes the following asks of you:
