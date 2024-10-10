@@ -34,3 +34,4 @@ Run the file on bash, you'll get a colour-coded line with number and letter deco
 Clicking next on the dialog box when the next option disappears change the url from usr=5 to usr=6 this will give the flag....hours of work gave an idea, before i was inspecting and trying....when i saw the url changing then i tried usr 6 which gave the flag.
 
 
+
