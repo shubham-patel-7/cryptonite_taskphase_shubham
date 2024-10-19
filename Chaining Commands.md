@@ -1,0 +1,37 @@
+#  Chaining with semicolons
+
+hacker@chaining~chaining-with-semicolons:~$ /challenge/pwn;/challenge/college
+Yes! You chained /challenge/pwn and /challenge/college! Here is your flag:
+pwn.college{conemVH3hocM9yzvuHmRmmrecJ_.dVTN4QDL2IzN0czW}
+
+# Your First shell script
+
+hacker@chaining~your-first-shell-script:~$ touch x.sh
+hacker@chaining~your-first-shell-script:~$ nano x.sh
+hacker@chaining~your-first-shell-script:~$ bash x.sh
+Great job, you've written your first shell script! Here is the flag:
+pwn.college{w1_FcYwSPpGEAh7s7g4Wc4t229Q.dFzN4QDL2IzN0czW}
+
+# Redirecting script output
+
+hacker@chaining~redirecting-script-output:~$ touch script.sh
+hacker@chaining~redirecting-script-output:~$ nano script.sh
+hacker@chaining~redirecting-script-output:~$ bash script.sh
+It looks like you are not piping this script out to /challenge/solve! Remember
+to pipe the output of your script into /challenge/solve using '|'.
+hacker@chaining~redirecting-script-output:~$ bash script.sh | /challenge/solve
+Correct! Here is your flag:
+pwn.college{E-BPmXcyy0UlKo0nueljfiEwlKu.dhTM5QDL2IzN0czW}
+
+# Executable Shell Scripts
+
+hacker@chaining~executable-shell-scripts:~$ touch script.sh
+hacker@chaining~executable-shell-scripts:~$ nano script.sh
+hacker@chaining~executable-shell-scripts:~$ ls -l script.sh
+-rw-r--r-- 1 hacker hacker 52 Oct 19 13:08 script.sh
+hacker@chaining~executable-shell-scripts:~$ chmod ugo+x script.sh
+hacker@chaining~executable-shell-scripts:~$ ./script.sh
+./script.sh: line 1: /challenge/pwn: No such file or directory
+./script.sh: line 2: /challenge/college: No such file or directory
+Congratulations on your shell script execution! Your flag:
+pwn.college{ktuB-DoDiZamQq-0a7ZKz6X9g91.dRzNyUDL2IzN0czW}
