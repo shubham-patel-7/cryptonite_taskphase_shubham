@@ -51,5 +51,7 @@ zardus@users~cracking-passwords:/home/hacker$ /challenge/run
 Congratulations, you have become Zardus! Here is your flag:
 pwn.college{MJAqQcyn47LkgXxkPs7fYGPzIRP.ddTN0UDL2IzN0czW}
 
-#
+# Using sudo
 
+hacker@users~using-sudo:~$ sudo cat /flag
+pwn.college{kwlDtnLNsw0SSyEahbBSZa12bKa.dhTN0UDL2IzN0czW}
