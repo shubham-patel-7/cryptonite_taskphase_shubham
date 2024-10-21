@@ -14,7 +14,7 @@ hacker@path~setting-path:~$ /challenge/run
 Invoking 'win'....
 Congratulations! You properly set the flag and 'win' has launched!
 ```
-we get the flag `
+we get the flag `pwn.college{IVjPOD7vj6mcuSNVe9mO4gCk4b6.dZTOwUDL2IzN0czW}`
 # Adding commands
 ```
 hacker@path~adding-commands:~$ which cat
